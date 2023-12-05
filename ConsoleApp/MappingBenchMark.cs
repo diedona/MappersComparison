@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BenchmarkDotNet.Attributes;
+using ConsoleApp.Mapperly;
 using Domain;
 
 namespace ConsoleApp
@@ -35,7 +36,7 @@ namespace ConsoleApp
         [Benchmark]
         public ICollection<ViewModel.Team> Mapperly()
         {
-            return [];
+            return TeamMapper.MapTeams(_teams);
         }
     }
 }
