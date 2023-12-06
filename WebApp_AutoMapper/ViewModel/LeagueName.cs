@@ -1,0 +1,8 @@
+﻿namespace WebApp_AutoMapper.ViewModel
+{
+    public class LeagueName
+    {
+        public string DeclaredName { get; set; }
+        public string HistoricalName { get; set; }
+    }
+}

@@ -7,7 +7,7 @@ namespace Domain
     {
         private readonly Faker<Team> _fakerTeam;
 
-        public const int NUMBER_OF_TEAMS = 10000;
+        public const int NUMBER_OF_TEAMS = 100;
         public const int SEED = 155039;
 
         public FakerRepository()
