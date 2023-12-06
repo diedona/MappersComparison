@@ -1,7 +1,5 @@
-using AutoMapper;
 using Domain;
-using Microsoft.AspNetCore.Mvc;
-using WebApp_AutoMapper.ViewModel;
+using WebApp_Mapperly.Mapperly;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 var app = builder.Build();
 
@@ -22,13 +19,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/teams-automapper",
-(
-    [FromServices] IMapper _mapper
-) =>
+app.MapGet("/teams-mapperly",() =>
 {
+    var fakeRepo = new FakerRepository();
+    var teams = fakeRepo.GetTeams();
     return TypedResults.Ok(
-        _mapper.Map<ICollection<Team>>(new FakerRepository().GetTeams())
+        TeamMapper.MapTeam(teams)
     );
 }).WithOpenApi();
 
