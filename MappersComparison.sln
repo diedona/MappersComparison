@@ -7,9 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{26960EC8-5E0C-4740-A323-1CE72C5C74FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp_AutoMapper", "WebApp_AutoMapper\WebApp_AutoMapper.csproj", "{E22171C8-4E23-4365-A0CE-80EA4D420985}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp_AutoMapper", "WebApp_AutoMapper\WebApp_AutoMapper.csproj", "{E22171C8-4E23-4365-A0CE-80EA4D420985}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp_Mapperly", "WebApp_Mapperly\WebApp_Mapperly.csproj", "{522ACF53-0325-4618-9B36-8742DC3C7890}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp_Mapperly", "WebApp_Mapperly\WebApp_Mapperly.csproj", "{522ACF53-0325-4618-9B36-8742DC3C7890}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "results", "results", "{41AD5FEE-B520-46C6-8268-4EDA5D73A89F}"
+	ProjectSection(SolutionItems) = preProject
+		results\20231207_automapper.diagsession = results\20231207_automapper.diagsession
+		results\20231207_mapperly.diagsession = results\20231207_mapperly.diagsession
+		results\summary_automapper.html = results\summary_automapper.html
+		results\summary_mapperly.html = results\summary_mapperly.html
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
