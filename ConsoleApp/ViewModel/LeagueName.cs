@@ -4,5 +4,6 @@
     {
         public string DeclaredName { get; set; }
         public string HistoricalName { get; set; }
+        public string ShortDeclaredName { get; set; }
     }
 }
