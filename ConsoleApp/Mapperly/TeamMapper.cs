@@ -9,6 +9,9 @@ namespace ConsoleApp.Mapperly
     {
         public static partial ViewModel.Team MapTeam(Team team);
         public static partial ICollection<ViewModel.Team> MapTeams(ICollection<Team> teams);
+
+        [MapProperty(nameof(Player.Nickname), nameof(ViewModel.Player.CallerName))]
+        private static partial ViewModel.Player PrivateMapPlayer(Player player);
     }
 
     [Mapper]
