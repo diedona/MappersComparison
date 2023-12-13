@@ -23,7 +23,7 @@ export default function () {
 
 export function handleSummary(data) {
     return {
-        './logs/summary_automapper.html': htmlReport(data),
+        './logs/summary_mapperly.html': htmlReport(data),
         'stdout': textSummary(data, { indent: ' ', enableColors: true })
     };
 }
