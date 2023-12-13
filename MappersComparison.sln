@@ -22,7 +22,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k6s", "k6s", "{1C48CD00-1759-48F7-AE10-90A9FD66B005}"
 	ProjectSection(SolutionItems) = preProject
 		k6s\script_automapper.js = k6s\script_automapper.js
-		script_mapperly.js = script_mapperly.js
+		k6s\script_mapperly.js = k6s\script_mapperly.js
 	EndProjectSection
 EndProject
 Global
